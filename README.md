@@ -2,7 +2,11 @@
 
 
 Thuật toán BFS
-![BFS](assets/BFS.gif)
+> ### 📊 Mô phỏng BFS
+> <p align="center">
+>   <img src="assets/BFS.gif" width="500"/>
+> </p>
+
 
 
 
