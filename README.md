@@ -2,5 +2,7 @@
 
 
 Thuật toán BFS
+![BFS](assets/BFS.gif)
+
 
 
