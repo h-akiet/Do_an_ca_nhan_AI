@@ -6,6 +6,9 @@
 >   <img src="assets/BFS.gif" width="500"/>
 > </p>
 
-
+> ### 📊 Thuật toán DFS
+> <p align="center">
+>   <img src="assets/DFS.gif" width="500"/>
+> </p>
 
 
