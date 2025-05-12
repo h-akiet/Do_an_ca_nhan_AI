@@ -29,6 +29,14 @@
 > <p align="center">
 >   <img src="assets/UCS.gif" width="500"/>
 > </p>  
+### 🚀 So sánh hiệu suất
+<p align="center">
+  <strong>Số bước</strong><br>
+  <img src="assets/step_uninform.png" width="500"/><br><br>
+  <strong>Thời gian giải</strong><br>
+  <img src="assets/time_uninform.png" width="500"/>
+</p>
+
  ### 2.2. Các thuật toán Tìm kiếm có thông tin  
      - Mô tả: tìm kiếm dựa vào đánh giá, ước lượng chi phí (Heurictic)
      - Thành phần chính: ma trận đầu vào, ma trận đầu ra, thuật toán áp dụng, tập các hành động sinh trạng thái mới
