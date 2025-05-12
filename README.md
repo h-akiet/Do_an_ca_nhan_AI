@@ -193,9 +193,9 @@
 - Hạn chế: chưa tích hợp Module của nhóm thuật toán tìm kiếm trong môi trường phức tạp vào chung. Không có nhiều tùy chọn (chọn chế độ chạy, random trạng thái....).
 - Ưu điểm: tích hợp hầu hết các thuật toán vào trò chơi. Giao diện đơn giản dễ sử dụng.
 - Hướng phát triển trong tương lại:
-      + nâng cấp để thuật toán chạy tốt hơn.
-      + Khắc phục hạn chế, nâng cao hiệu suất.
-      + Áp dụng thêm nhiều thuật toán vào trò chơi, mở rộng môi trường tìm kiếm hơn nữa.
+    + nâng cấp để thuật toán chạy tốt hơn.
+    + Khắc phục hạn chế, nâng cao hiệu suất.
+    + Áp dụng thêm nhiều thuật toán vào trò chơi, mở rộng môi trường tìm kiếm hơn nữa.
 
 
 
