@@ -117,7 +117,7 @@
 ### 📊 Thuật toán AC-3  
 > AC3 xử lý để lọc bỏ các giá trị không hợp lệ khỏi miền giá trị của biến, dựa trên các ràng buộc giữa các biến kết hợp với Backtracking giúp loc miền giá trị sao mõi bước gán.
 > <p align="center">
->   <img src="assets/ac3.gif" width="500"/>
+>   <img src="assets/ac3_1.gif" width="500"/>
 > </p> 
 
 ### Tài liệu tham khảo:  
