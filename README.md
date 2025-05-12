@@ -1,6 +1,6 @@
 # Đồ án cá nhân môn Trí tuệ nhân tạo  
-Tên sinh viên: Nguyễn Hoàng Anh Kiệt  
-MSSV: 23110247
+#### Tên sinh viên: Nguyễn Hoàng Anh Kiệt  
+#### MSSV: 23110247
 ### 1.Mục tiêu  
 - Hiểu rõ được bản chất và nguyên lí các thuật toán tìm kiếm AI
 - Áp dụng được các thuật toán đã học vào vấn đề thực tế (áp dụng thuật toán, tạo giao diện cho trò chơi 8 Puzzle)
