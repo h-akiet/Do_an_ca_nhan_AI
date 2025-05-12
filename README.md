@@ -5,7 +5,8 @@
 - So sánh, đánh giá ưu nhược điểm của từng (nhóm) thuật toán
 - Có thể đưa ra giải pháp nâng cấp(nếu có)
 ### 2. Nội dung   
-  ### 2.1. Các thuật toán Tìm kiếm không có thông tin
+  ### 2.1. Các thuật toán Tìm kiếm không có thông tin  
+     - Mô tả:là nhóm thuật toán không ưu tiên bất kì trạng thái nào, mở rộng nút theo thứ tự nhất định
      - Thành phần chính: ma trận đầu vào, ma trận đầu ra, thuật toán áp dụng, tập các hành động sinh trạng thái mới
      - Solution: tập các trạng thái mới được sinh ra đại diện cho từng bước giải trò chơi
 ### 📊 Thuật toán BFS  
@@ -29,6 +30,7 @@
 >   <img src="assets/UCS.gif" width="500"/>
 > </p>  
  ### 2.2. Các thuật toán Tìm kiếm có thông tin  
+     - Mô tả: tìm kiếm dựa vào đánh giá, ước lượng chi phí (Heurictic)
      - Thành phần chính: ma trận đầu vào, ma trận đầu ra, thuật toán áp dụng, tập các hành động sinh trạng thái mới
      - Solution: tập các trạng thái mới được sinh ra đại diện cho từng bước giải trò chơi
 ### 📊 Thuật toán GREEDY  
@@ -123,6 +125,15 @@
 > AC3 xử lý để lọc bỏ các giá trị không hợp lệ khỏi miền giá trị của biến, dựa trên các ràng buộc giữa các biến kết hợp với Backtracking giúp loc miền giá trị sao mõi bước gán.
 > <p align="center">
 >   <img src="assets/ac3_1.gif" width="500"/>
+> </p> 
+### 2.6. Các thuật toán Tìm kiếm học tăng cường  
+    - Mô tả: Reinforcement Learning (Học tăng cường) là một kỹ thuật Machine Learning tập trung vào việc đào tạo các tác nhân tự động (agents) đưa ra quyết định thông qua tương tác trực tiếp với môi trường.
+    - Thành phần chính: ma trận đầu vào, ma trận dích, hàm training, bảng Q
+    - Solutinon:  trả về tập các trạng thái di chuyển từ bắt đầu đến đích  
+### 📊 Thuật toán Q-Learning  
+> Q-learning giúp agent (tác nhân) học cách hành động tối ưu trong môi trường để đạt phần thưởng tối đa. Không cần biết trước mô hình môi trường.Dựa vào bảng Q (Q-table), trong đó mỗi trạng thái và hành động được gán một giá trị Q.
+> <p align="center">
+>   <img src="assets/Q_learning.gif" width="500"/>
 > </p> 
 
 ### Tài liệu tham khảo:  
