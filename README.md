@@ -101,6 +101,17 @@
 > <p align="center">
 >   <img src="assets/Genetic.gif" width="500"/>
 > </p> 
+### Đánh giá hiệu suất  
+- Các thuật toán leo đổi chỉ tìm được lời giải cho những tastcase đơn giản trong quá trình kiểm thử, hiệu suất nhận thấy gần như tương đương.
+- Các thuật toán còn lại:
+<p align="center">
+  <strong>Số bước</strong><br>
+  <img src="assets/step_local.png" width="500"/><br><br>
+  <strong>Thời gian giải</strong><br>
+  <img src="assets/time_local.png" width="500"/>
+</p>  
+
+  
  ###   2.4. Các thuật toán Tìm kiếm trong môi trường phức tạp  
       - Mô tả: Tìm kiếm trong môi trường phức tạp, trong đó nhận thức của tác nhân không đủ để xác định trạng thái chính xác. Điều đó có nghĩa là một số hành động của tác nhân sẽ nhằm mục đích giảm bớt sự không chắc chắn về trạng thái hiện tại.
       - Thành phần chính: tập các trạng thái niềm tin, tập các hành động áp dụng, tập các trạng thái đích
