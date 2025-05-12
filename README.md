@@ -1,4 +1,6 @@
-# Do_an_ca_nhan_AI-Nguyễn Hoàng Anh Kiệt-23110247
+# Đồ án cá nhân môn Trí tuệ nhân tạo  
+Tên sinh viên: Nguyễn Hoàng Anh Kiệt  
+MSSV: 23110247
 ### 1.Mục tiêu  
 - Hiểu rõ được bản chất và nguyên lí các thuật toán tìm kiếm AI
 - Áp dụng được các thuật toán đã học vào vấn đề thực tế (áp dụng thuật toán, tạo giao diện cho trò chơi 8 Puzzle)
@@ -122,7 +124,7 @@
 > <p align="center">
 >   <img src="assets/andor.gif" width="500"/>
 > </p>  
-### 📊 Thuật toán Non Observation  
+### 📊 Thuật toán Search with No Observation  
 > Giải pháp cho một vấn đề không có cảm biến là một chuỗi hành động, không phải là một kế hoạch có điều kiện (vì không có nhận thức).
 > Nhưng chúng ta tìm kiếm trong không gian của các trạng thái niềm tin thay vì các trạng thái vật lý.  
 > Trong không gian trạng thái niềm tin, vấn đề có thể quan sát được hoàn toàn vì tác nhân luôn biết trạng thái niềm tin của chính mình. Hơn nữa, giải pháp (nếu có) cho một vấn đề không có cảm biến.
@@ -130,7 +132,7 @@
 > <p align="center">
 >   <img src="assets/non.gif" width="500"/>
 > </p>  
-### 📊 Thuật toán Partial Observation  
+### 📊 Thuật toán Search with Partial Observation  
 > Nếu trong tìm kiếm không có cảm biến khi áp dụng trong bài toán 8 Puzzle là không khả thi, nhưng có thể giải nếu chúng ta có thể nhìn thấy được thông tin một phần của ma trận thì cũng đủ để lần lượt đưa các ô vào vị trí đúng bằng cách theo dõi và ghi nhớ hành động (tức là duy trì trạng thái niềm tin).
 > Từ đó quan sát lặp kế hoạch cho hành động dựa trên chi phí Heurictic. 
 > <p align="center">
@@ -146,7 +148,7 @@
 > <p align="center">
 >   <img src="assets/backtracking.gif" width="500"/>
 > </p>   
-### 📊 Thuật toán GenerateE & Test  
+### 📊 Thuật toán Generate & Test  
 > Tránh các thất bại, bằng kiểm tra trước các ràng buộc.Kiểm tra tiến: mỗi khi một biến được gán giá trị (Generate), kiểm tra tiến đảm bảo tính tương thích (consistency) giữa biến đang được xét và các biến chưa được gán nhưng có ràng buộc trực tiếp với nó. Nếu bất kỳ biến nào trong số đó không còn giá trị hợp lệ nào trong miền giá trị, ta quay lui (backtrack).
 > <p align="center">
 >   <img src="assets/test.gif" width="500"/>
