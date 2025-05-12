@@ -85,6 +85,11 @@
       - Thành phần chính: tập các trạng thái niềm tin, tập các hành động áp dụng, tập các trạng thái đích
       - Solution: áp dụng các hành động lên trạng thái niềm tin làm giảm bớt các trạng thái không phù hợp, đồng thời đưa các trạng thái lại cần với trạng thái đích.  
 ### Các trạng thái niềm tin trong nhóm thuật toán này được tạo ra dựa trên trạng thái đích đồng thời tạo ra với số lượng cần thiết để có thể tìm ra tập hành động phù hợp.
+### 📊 Thuật toán And-Or  
+> Bài toán And_Or được dùng để giải quyết các bài toán có tính không xác định (non-deterministic). Tuy nhiên, vẫn chưa triển khai được trong môi trường niềm tin. Hiện tại được áp dụng trên trạng thái xác định. 
+> <p align="center">
+>   <img src="assets/andor.gif" width="500"/>
+> </p>  
 ### 📊 Thuật toán Non Observation  
 > Giải pháp cho một vấn đề không có cảm biến là một chuỗi hành động, không phải là một kế hoạch có điều kiện (vì không có nhận thức).
 > Nhưng chúng ta tìm kiếm trong không gian của các trạng thái niềm tin thay vì các trạng thái vật lý.  
