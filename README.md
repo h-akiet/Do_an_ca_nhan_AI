@@ -200,7 +200,7 @@
 
 
 ### Tài liệu tham khảo:  
-- Một số các khái niệm, lí thuyết về nhóm thuật toán Local Search được lấy và dịch lại từ trang GeeksForGreeks  
+- Một số các khái niệm, lí thuyết được lấy và dịch lại từ trang GeeksForGreeks  
     Link: https://www.geeksforgeeks.org/  
 - Sách: Russell 2020 Artificial intelligence a modern approach
  
