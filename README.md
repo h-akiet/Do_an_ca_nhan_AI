@@ -56,8 +56,19 @@
 > <p align="center">
 >   <img src="assets/IDA_star.gif" width="500"/>
 > </p>  
+### 🚀 So sánh hiệu suất
+<p align="center">
+  <strong>Số bước</strong><br>
+  <img src="assets/step_inform.png" width="500"/><br><br>
+  <strong>Thời gian giải</strong><br>
+  <img src="assets/time_inform.png" width="500"/>
+</p>  
+
  ###   2.3. Các thuật toán Tìm kiếm cục bộ  
-      - Mô tả: thuật toán tìm kiếm cục bộ từ bỏ việc khám phá không gian tìm kiếm một cách có hệ thống, thay vì cố gắng truy cập tất cả các trạng thái, tìm kiếm cục bộ sử dụng các chiến lược để tìm ra các trạng thái khá tốt một cách nhanh chóng trung bình. Nhược điểm của lựa chọn thiết kế này là tìm kiếm cục bộ không được đảm bảo sẽ tìm ra giải phá ngay cả khi có giải pháp. 
+      - Mô tả: 
+            + Thuật toán tìm kiếm cục bộ từ bỏ việc khám phá không gian tìm kiếm một cách có hệ thống 
+            + Thay vì cố gắng truy cập tất cả các trạng thái, tìm kiếm cục bộ sử dụng các chiến lược để tìm ra các trạng thái khá tốt một cách nhanh chóng trung bình.
+            + Nhược điểm của lựa chọn thiết kế này là tìm kiếm cục bộ không được đảm bảo sẽ tìm ra giải pháp ngay cả khi có giải pháp. 
       - Thành phần chính: trạng thái đầu vào hợp lệ, một tập các quan hệ láng giềng, một hàm chi phí đánh giá chất lượng, một trạng thái địch
       - Solution: Một đường dẫn tù trạng thái ban đầu đến trạng thái đích(có thể rỗng).  
 ### 📊 Thuật toán SIMPLE HILL  
