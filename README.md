@@ -188,7 +188,6 @@
 |   BACKTRACKING     |     ✅   |            |      |                        |
 |    GENERATE & TEST     |     ✅   |            |      |                        |
 |   AC3     |    ✅    |            |   ❓   | Áp dụng kết hợp Backtracking, không chắc vì thấy kết quả chạy giống nhau|
-
 |  Q-Learning  |     ✅   |            |      |                        |  
 - Hạn chế: chưa tích hợp Module của nhóm thuật toán tìm kiếm trong môi trường phức tạp vào chung. Không có nhiều tùy chọn (chọn chế độ chạy, random trạng thái....).
 - Ưu điểm: tích hợp hầu hết các thuật toán vào trò chơi. Giao diện đơn giản dễ sử dụng.
