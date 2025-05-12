@@ -166,11 +166,37 @@
 >   <img src="assets/Q_learning.gif" width="500"/>
 > </p> 
 
+### Kết luận  
+
+- Kết quả:
+
+| Thuật toán | Làm được | Chưa làm được |Phân vân| Ghi chú                |
+|------------|----------|---------------|--------|------------------------|
+|   BFS      |     ✅   |            |     |                        |
+|   DFS      |     ✅   |           |      |                        |
+|   IDS      |     ✅   |            |      |                        |
+|   UCS      |     ✅   |           |      |                        |
+|   GREEGY   |     ✅   |            |      |                        |
+|   A*       |     ✅   |            |      |                        |
+|   IDA*      |     ✅   |            |      |                        |
+|   Simple Hill |     ✅   |            |      |                        |
+|   Stpest Hill|     ✅   |            |      |                        |
+|   Stochastic Hill|     ✅   |            |      |                        |
+|   And-Or    |      |      ❌      |      | Không thể áp dụng được trong môi trường niềm tin như yêu cầu, hiểu được một phần thuật toán nhưng chưa biết cách áp dụng vào trò chơi 8 puzzle 1 cách chính xác nhất. |
+|   Partial Observation |        |            |   ❓   | Đã cài đặt thuật toán vào trò chơi như mô tả, bài tập trên lớp, nhưng không rõ đã áp dụng đúng bản chất thuật toán vào trò chơi chưa |
+|  No Observation|       |            |   ❓   | Tương tự Partial Observation nhưng khác nhau tập Belied_state, khi không có bất cứ không tin gì của trạng thái thực tế, tài liệu có ghi khi áp dụng vào trò chơi 8 Puzzle thì không khả thi|
+|   BACKTRACKING     |     ✅   |            |      |                        |
+|    GENERATE & TEST     |     ✅   |            |      |                        |
+|   AC3     |        |            |   ❓   | Áp dụng kết hợp Backtracking, không chắc vì thấy kết quả chạy giống nhau|
+|  Q-Learning  |     ✅   |            |      |                        |
+
+
+
 ### Tài liệu tham khảo:  
 - Một số các khái niệm, lí thuyết về nhóm thuật toán Local Search được lấy và dịch lại từ trang GeeksForGreeks  
     Link: https://www.geeksforgeeks.org/  
 - Sách: Russell 2020 Artificial intelligence a modern approach
-- 
+ 
     
 
 
