@@ -157,7 +157,7 @@
 ### 📊 Thuật toán AC-3  
 > AC3 xử lý để lọc bỏ các giá trị không hợp lệ khỏi miền giá trị của biến, dựa trên các ràng buộc giữa các biến kết hợp với Backtracking giúp lọc miền giá trị sau mỗi bước gán.
 > <p align="center">
->   <img src="assets/ac3_1.gif" width="500"/>
+>   <img src="assets/ac3.gif" width="500"/>
 > </p> 
 ### 2.6. Các thuật toán Tìm kiếm học tăng cường  
     - Mô tả: Reinforcement Learning (Học tăng cường) là một kỹ thuật Machine Learning tập trung vào việc đào tạo các tác nhân tự động (agents) đưa ra quyết định thông qua tương tác trực tiếp với môi trường.
