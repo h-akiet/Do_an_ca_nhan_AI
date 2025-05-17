@@ -848,67 +848,120 @@ def generate_and_test():
     backtrack(0)
     return all_states
 # AC3
-np.random.seed(52)
-
-DOMAIN = list(range(1, 9)) + [0]
+np.random.seed(42)
 
 def is_complete(state):
-    return np.count_nonzero(state) == 8
+    flat_state = state.flatten()
+    return (np.count_nonzero(state) == 8 and 
+            len(set(flat_state)) == 9 and 
+            all(0 <= x <= 8 for x in flat_state))
 
 def is_consistent(state, row, col, value):
-    if value != 0:
-        if value in state:
-            return False
-        if col > 0 and state[row, col - 1] != 0 and value != state[row, col - 1] + 1:
-            return False
-        if row > 0 and state[row - 1, col] != 0 and value != state[row - 1, col] + 3:
-            return False
-    else:  
+    
+    if value != 0 and value in state:
+        return False
+    
+    if col > 0 and state[row, col - 1] != 0 and value != 0 and value != state[row, col - 1] + 1:
+        return False
+    if col < 2 and state[row, col + 1] != 0 and value != 0 and state[row, col + 1] != value + 1:
+        return False
+    
+   
+    if row > 0 and state[row - 1, col] != 0 and value != 0 and value != state[row - 1, col] + 3:
+        return False
+    if row < 2 and state[row + 1, col] != 0 and value != 0 and state[row + 1, col] != value + 3:
+        return False
+    
+  
+    if value == 0:
         return np.count_nonzero(state == 0) <= 1
+    
     return True
 
 def find_unassigned(state):
     zeros = np.argwhere(state == 0)
-    return zeros[0] if zeros.size > 0 else (None, None)
+    return tuple(zeros[0]) if zeros.size > 0 else (None, None)
+
+def get_neighbors(row, col):
+    neighbors = [(r, c) for r in range(3) for c in range(3) if (r, c) != (row, col)]
+    return neighbors
+
+def is_constraint_satisfied(val1, val2, pos1, pos2):
+    if val1 == 0 or val2 == 0:
+        return True
+    r1, c1 = pos1
+    r2, c2 = pos2
+    if r1 == r2 and abs(c1 - c2) == 1:
+        return abs(val1 - val2) == 1
+    if c1 == c2 and abs(r1 - r2) == 1:
+        return abs(val1 - val2) == 3
+    return True
 
 def revise(domains, xi, xj):
     revised = False
-    for x in domains[xi][:]:
-        if all(x == y for y in domains[xj]):
-            domains[xi].remove(x)
+    to_remove = []
+    for x in domains[xi]:
+        if not any(is_constraint_satisfied(x, y, xi, xj) and x != y for y in domains[xj]):
+            to_remove.append(x)
             revised = True
+    for x in to_remove:
+        domains[xi].remove(x)
     return revised
 
-def backtracking_with_ac3(state, all_states):
+def ac3(domains):
+    queue = deque([(xi, xj) for xi in domains for xj in get_neighbors(*xi)])
+    while queue:
+        xi, xj = queue.popleft()
+        if revise(domains, xi, xj):
+            if not domains[xi]:
+                return False
+            for xk in get_neighbors(*xi):
+                if xk != xj:
+                    queue.append((xk, xi))
+    return True
+
+def backtracking_with_ac3(state, domains, all_states, depth=0, max_depth=100):
+    if depth > max_depth:
+        return False
+    
     if is_complete(state):
         all_states.append(state.copy())
         return True
 
     row, col = find_unassigned(state)
-    if row is None:
+    if row is None and col is None:
         return False
 
-    values = DOMAIN.copy()
-    np.random.shuffle(values)
-
+    values = domains[(row, col)].copy()
+    np.random.shuffle(values) 
     for value in values:
         if is_consistent(state, row, col, value):
+            saved_domains = {k: v.copy() for k, v in domains.items()}
             state[row, col] = value
-            all_states.append(state.copy()) 
-
-            if backtracking_with_ac3(state, all_states):
-                return True
+            domains[(row, col)] = [value]
+            all_states.append(state.copy())  
+            if ac3(domains):
+                if backtracking_with_ac3(state, domains, all_states, depth + 1, max_depth):
+                    return True
 
             state[row, col] = 0
-            all_states.append(state.copy()) 
+            domains.update(saved_domains)
+            all_states.append(state.copy())  
+
     return False
 
 def get_all_states_csp_ac3():
-    start_state = np.zeros((3, 3),dtype=int)
+    state = np.zeros((3, 3), dtype=int)
     all_states = []
-    backtracking_with_ac3(start_state, all_states)
-    return all_states
+    DOMAIN = list(range(0, 9))
+    domains = {(r, c): DOMAIN.copy() for r in range(3) for c in range(3)}
 
+   
+    if not ac3(domains):
+        return all_states
+
+    backtracking_with_ac3(state, domains, all_states, max_depth=100)
+    return all_states
 #Q learning
 def q_learning_solve(start_2d, goal_2d, episodes=5000, alpha=0.1, gamma=0.9, epsilon=0.1):
     start_1d = to_1d(start_2d)
