@@ -179,9 +179,12 @@
 |   DFS      |     ✅   |           |      |                        |
 |   IDS      |     ✅   |            |      |                        |
 |   UCS      |     ✅   |           |      |                        |
-|   GREEGY   |     ✅   |            |      |                        |
 |   A*       |     ✅   |            |      |                        |
 |   IDA*      |     ✅   |            |      |                        |
+|   GREEGY   |     ✅   |            |      |                        |
+|   Beam Search  |     ✅   |            |      |                        |
+|   Genetic   |     ✅   |            |      |                        |
+|   Simulated Annealing   |     ✅   |            |      |                        |
 |   Simple Hill |     ✅   |            |      |                        |
 |   Stpest Hill|     ✅   |            |      |                        |
 |   Stochastic Hill|     ✅   |            |      |                        |
